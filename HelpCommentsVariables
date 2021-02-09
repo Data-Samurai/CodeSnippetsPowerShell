@@ -1,0 +1,27 @@
+## To use help in PowerShell, see bellow
+Get-help                     # Gives help on how to use the help
+Get-help *                   # Lists all Windows PowerShell commands
+Get-help Get-Process         # Opens the help of a command eg. Get-Process
+Get-help Get-Process –full   # Opens the detailed help with syntax and examples for the command on
+
+## Comments
+# Comment out entire blocks
+<#
+$p = 12231
+$p = p$ +12
+#>
+
+# Make one part retractable
+#region Whatever makes sense as a title
+$p = 12231
+$p = p$ +12
+#endregion Whatever makes sense as a title
+
+## Variables
+# In PowerShell variables don't have to be declared and can store any data types.
+$YourVariable = "yeah"
+$YourVariable = 12
+ 
+#If the data type must be declared
+$YourVariable = [char]0x263a # = ☺
+[char]$YourVariable = 0x263a # = ☺
